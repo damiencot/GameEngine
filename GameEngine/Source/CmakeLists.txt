@@ -1,0 +1,9 @@
+#Settings
+include_directories(${CMAKE_SOURCE_DIR}/GameEngine/Header)
+
+#Files
+file(GLOB_RECURSE ENGINE_SOURCES *.cpp *.c)
+file(GLOB_RECURSE ENGINE_HEADERS *.hpp *.h *.inl)
+
+ADD_EXECUTABLE(GameEngine ${ENGINE_SOURCES} ${ENGINE_headers})
+target_link_libraries(GameEngine glfw3 glew32)

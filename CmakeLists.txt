@@ -1,0 +1,12 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
+PROJECT(GameEngine)
+
+#Settings
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/Bin)
+
+LINK_DIRECTORIES(${CMAKE_SOURCE_DIR}/Lib)
+include_directories(${CMAKE_SOURCE_DIR}/ThirdParty)
+
+#subdirectories
+add_subdirectory(GameEngine/Source)
